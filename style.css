@@ -1,0 +1,93 @@
+::selection {
+  background: transparent;
+  color: #5CE4ED;
+}
+
+/* :root {
+  --font-weight-ultra-light: 100;
+
+  --font-family-sans-serif:
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+} */
+
+html {
+  box-sizing: border-box;
+  font-family:
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 100;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #5d9cec;
+  background: linear-gradient(to right, #468ee9, #74aaef);
+  background-size: 100% auto;
+  color: #fff;
+  text-align: center;
+}
+
+.info-block {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-block__info {
+  margin-top: 0px;
+}
+
+.info-block__info:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.info-block__name {
+  font-size: 48px;
+}
+
+.info-block__job {
+  font-size: 36px;
+}
+
+.info-block__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-block__links__link {
+  font-size: 24pt;
+  color: inherit;
+}
+
+.info-block__links__link:not(:last-child) {
+  margin-right: 20px;
+}
